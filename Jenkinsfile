@@ -38,18 +38,18 @@ pipeline {
                 }
             }
         }
-            post {
-            success {
-                emailext body: 'Your pipeline was successful.',
-                         subject: 'Pipeline Success Notification',
-                         to: 'brajrajsingh751@gmail.com'
-            }
-            failure {
-                emailext body: 'Your pipeline failed.',
-                         subject: 'Pipeline Failure Notification',
-                         to: 'brajrajsingh751@gamil.com'
-            }
+    }
+    
+    post {
+        success {
+            emailext body: 'Your pipeline was successful.',
+                     subject: 'Pipeline Success Notification',
+                     to: 'brajrajsingh751@gmail.com'
+        }
+        failure {
+            emailext body: 'Your pipeline failed.',
+                     subject: 'Pipeline Failure Notification',
+                     to: 'brajrajsingh751@gmail.com'
         }
     }
 }
-
